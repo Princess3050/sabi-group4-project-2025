@@ -1,9 +1,272 @@
 /* header section starts here */
 
 /* navbar section starts here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+body{
+    overflow-x: hidden;
+}
+/* header section starts here */
+
+/* nav1 starts here */
+header{
+    width: 100vw;
+    height: 50vh;
+}
+header nav{
+    width: 90vw;
+    height: 2vh;
+    display: flex;
+    justify-content: space-between;
+    margin:25px auto;
+}
+header nav .logo{
+    font-size: 1.8rem;
+    width: 18vw;
+    
+}
+header nav .nav-items{
+    display: flex;
+    width: 50vw;
+    
+}
+header .nav-items .nav-links{
+    list-style: none;
+    margin: 0 25px;
+}
+header .nav-links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1rem;
+    font-weight: 550;
+}
+header .nav-items .active{
+    color: #83AE3A;
+}
+header .nav-links a:hover{
+    color: #83AE3A;
+}
+header .carts{
+    width: 10vw;
+    font-size: 21px;
+}
+.hamburger{
+    display: none;
+}
+/* nav1 ends here */
+
+/* nav2 starts here */
+header .nav2{
+    width: 90vw;
+    height: 10vh;
+    margin: 50px auto;
+}
+header .nav2 .hamburger2{
+    display: flex;
+    justify-content: space-between;
+}
+header .nav2 .hamburger2 .department{
+    width: 16vw;
+    height: 6vh;
+    background-color: #83AE3A;
+    color: white;
+    padding-left: 5px;
+    font-size: 1.5rem;
+
+}
+.nav2 .hamburger2 .department select{
+    background-color: #83AE3A;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+}
+.nav2 .hamburger2 .categories {
+    width: 49.5vw;
+    height: 6.2vh;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    
+    
+}
+.nav2 .hamburger2 .categories select{
+    width: 17.35vw;
+    height: 5vh;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    
+
+}
+.nav2 .hamburger2 .categories select:focus{
+    outline: none;
+    border: none;
+    width: 17.35vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    
+}
+.nav2 .hamburger2 .categories input{
+    width: 25vw;
+    height: 5vh;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    
+}
+.nav2 .hamburger2 .categories input:focus{
+    outline: none;
+    border: none;
+    
+}
+
+.nav2 .hamburger2 span button{
+    width: 7vw;
+    height: 6vh;
+    background-color:  #83AE3A;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+.nav2 .hamburger2 span button:hover{
+    background-color: hsl(0, 0%, 96%);
+    color: #83AE3A;
+}
+.nav2 .contact{
+    width: 10vw;
+    display: flex;
+    gap: 25px;
+    font-size: 1.2rem;
+
+}
+.hamburger2 .contact div+div{
+    font-size: 1.1rem;
+}
+.contact .fa-phone{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin-left: -30px;
+    border-radius: 20px;
+    background-color: rgb(202, 200, 200);
+    color: rgb(105, 104, 104);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+/* nav2 ends here */
+/* header section ends here */
+
+
 /* navbar section ends here  */
 
 /* hero section starts here */
+
+header section {
+    width: 90vw;
+    margin-top: 50px;
+    overflow-x: hidden;
+    
+}
+header section .hero-container{
+    background-color: #F6F6F6;
+    width: 64vw;
+    display: flex;
+    justify-content: end;
+    float: right;
+    padding: 30px;
+}
+header section .hero-context{
+    width: 19vw;
+    margin-top: 65px;
+}
+header section .hero-context h4{
+    color:#83AE3A ;
+    letter-spacing: 2px;
+}
+header section .hero-context h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+header section .hero-context button{
+    margin-top: 35px;
+    width: 160px;
+    height: 40px;
+    font-size: 1rem;
+    color: white;
+    background-color: #83AE3A;
+    outline: none;
+    border: none;
+}
+header section .hero-context button:hover{
+    background-color: hsl(0, 0%, 96%);
+    color: #83AE3A;
+}
+header section .hero-image{
+    width: 30vw;
+}
+header section .hero-image img{
+    width: 32vw;
+    height: 100%;
+} 
+.hero-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    
+    }
+
+.hero-card {
+    background: #F6F6F6;
+    text-align: center;
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    flex: 5 0 250px;
+    max-width: 254px;   
+}
+
+.hero-card:hover {
+    transform: translateY(-5px);
+    }
+
+.hero-card img {
+    width: 100%;
+    height: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    border-radius: 8px;
+    }
+
+.hero-card h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+    background-color: white;
+    margin-top: 10px;
+    }
+
+
 /* hero section ends here */
 
 /* header section ends here */
@@ -34,12 +297,181 @@
 /* media queries here */
 
 /* media query 320px starts here */
+@media (min-width: 320px) and (max-width: 425px){
+    header  .hamburger{
+        display: block;
+        color: black;
+        font-size: 30px;
+        cursor: pointer;
+        position: relative;
+    }
+    header .nav-items .nav-links, .carts{
+        display: none;
+    }
+    header .nav2 .categories, .contact div{
+        display: none;
+    }
+    .nav2 .hamburger2 .department {
+    width: 80%;
+    height: 6vh;
+    background-color: hsl(75, 100%, 25%);
+    color: white;
+    display: flex;
+    align-items: stretch;
+    font-size: 15px;
+    
+
+    }
+    .nav2 .hamburger2 .department select {
+        display: flex;
+        align-items: stretch;
+        width: 50vw;
+        font-size: 19px;
+        padding: 2px;
+    }
+    header section .hero-container{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        /* text-align: center; */
+    }
+    header section .hero-container .hero-context{
+        flex-shrink: 0;
+        width: 300px;       display: inline-block;
+        flex-wrap: nowrap;
+    }
+    header section .hero-container .hero-image{
+        min-width: 350px;
+        height: auto;
+        margin-left: 20px;
+    }
+    .hero-container .hero-image img{
+        width: 72%;
+        height: 40%;
+        margin-top: 20px;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /* media query 320px ends here */
 
 /* media query 780px starts here */
+@media screen and (min-width: 767px){
+    header nav  .carts{
+        display: flex;
+        width: 20vw;
+        margin-left: 10px;
+        display: none;
+    
+    }
+    header nav .nav-items{
+        display: flex;
+        width: 58vw;
+    }
+    header .nav2 .department, .categories, .contact{
+        display: flex;
+        align-items: stretch;
+    }
+    header .nav2 .hamburger2 .department{
+        width: 30vw;
+        
+    }
+    header .nav2 .department select{
+        width: 30vw;
+        display: flex;
+        align-items: stretch;
+        font-size: 0.1rem;
+        padding: 5px 0;
+        
+    }
+    header .nav2 .categories{
+        width: 80vw;
+    }
+    header .nav2 .contact{
+        width: 15vw;
+        display: flex;
+        gap: 10px;
+        display: none;
+        
+    }
+    .contact .fa-phone{
+    margin-left: 10px;
+    }
+    .contact div+div{
+        font-size: 0.8rem;
+    }
+    header section .hero-container{
+        display: flex;
+        /* width: 100%; */
+        gap: 60px;
+        justify-content: center;
+        /* text-align: center; */
+    }
+    header section .hero-container .hero-image{
+        /* min-width: 350px; */
+        height: auto;
+        /* margin-left: 20px; */
+        margin-top: 60px;
+    }
+    .hero-section {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 40px;
+        justify-content: center;
+    }
+    
+}
 /* media query 780px ends here */
 
 /* media query 1024px starts here */
+@media screen and (min-width: 1024px){
+    header nav  .carts{
+        display: flex;
+        width: 20vw;
+        font-size: 20px;
+    
+    }
+    
+    header nav .nav-items{
+        display: flex;
+        width: 49vw;
+    }
+    header .nav2 .department, .categories, .contact{
+        display: flex;
+        align-items: stretch;
+    }
+    header .nav2 .hamburger2 .department{
+        width: 20vw;
+        padding: 2px 20px;
+        
+    }
+    header .nav2 .department select{
+        width: 15vw;
+        display: flex;
+        align-items: stretch;
+        padding: 5px 0;
+        
+    }
+    header .nav2 .categories{
+        width: 45vw;
+    }
+    header .nav2 .contact{
+        width: 18vw;
+        display: flex;
+        
+    }
+    .hamburger2 .contact div+div {
+        font-size: 15px;
+    }
+    .contact .fa-phone{
+    margin-left: 10px;
+    }
+    /* */
+}
 /* media query 1024px ends here */
 
 /* media queries ends here */
